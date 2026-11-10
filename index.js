@@ -9,6 +9,12 @@ app.get('/', (req, res) => {
   })
 })
 
+app.get('/login', (req, res) => {
+  res.json({
+    message: "login berhasil"
+  })
+})
+
 app.post('/user', (req, res) => {
   const body = req.body;
 
